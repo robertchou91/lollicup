@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .header {
@@ -47,7 +47,7 @@ body {
 } */
 
 .heading-primary-main {
-  width: 300px;
+  width: 360px;
   display: block;
   margin-bottom: 100px;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .heading-primary-sub img {
-  width: 20%;
+  width: 25%;
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards;
 }
@@ -69,6 +69,15 @@ body {
 
 
 @media (min-width: 1200px) {
+  body {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+  }
+
   .header {
     height: 95vh;
     background-image: linear-gradient(to right bottom, rgba(64, 64, 64, 0.94), rgba(0, 0, 0, 0.94)), url(../img/header.jpg);
