@@ -184,6 +184,35 @@ body {
   border-bottom: 1px solid #eee;
 }
 
+.section-locations {
+  padding: 200px 0;
+  background-image: linear-gradient(
+    to right bottom, 
+  rgba(64, 64, 64, 0.94), 
+  rgba(0, 0, 0, 0.94)), 
+  url(../img/locationbg.jpg);
+  background-size: cover;
+
+  transform: skewY(-7deg);
+  margin-top: -250px;
+}
+
+.section-locations > * {
+  transform: skewY(7deg);
+}
+
+.location-box {
+  background-color: rgba(255, 255, 255, .8);
+  padding: 25px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .30);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 70%;
+  text-align: center;
+}
+
 @media(min-width: 767px) {
   body {
     font-family: "Fira Sans", sans-serif;
@@ -216,6 +245,15 @@ body {
   }
 
   .row .col-1-of-3:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 40px) / 4);
+    float: left;
+  }
+
+  .row .col-1-of-4:not(:last-child) {
     margin-right: 40px;
   }
 
@@ -266,6 +304,14 @@ body {
   
   .heading-primary-sub img:not(:last-child) {
     margin-right: 5%;
+  }
+
+  .heading-tertiary {
+    font-size: 24px;
+  }
+
+  .u-margin-bottom-small {
+    margin-bottom: 8px;
   }
 
   .u-center-text {
@@ -381,9 +427,34 @@ body {
   .card__details li:not(:last-child) {
     border-bottom: 1px solid #eee;
   }
+
+  .section-locations {
+    padding: 200px 0;
+    background-image: linear-gradient(
+      to right bottom, 
+    rgba(64, 64, 64, 0.94), 
+    rgba(0, 0, 0, 0.94)), 
+    url(../img/locationbg.jpg);
+    background-size: cover;
+
+    transform: skewY(-7deg);
+    margin-top: -100px;
+  }
+
+  .section-locations > * {
+    transform: skewY(7deg);
+  }
+
+  .location-box {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 25px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .30);
+  }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: 1199px) {
   body {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
