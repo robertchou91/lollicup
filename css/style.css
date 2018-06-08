@@ -35,6 +35,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
@@ -92,6 +93,7 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   }
   
@@ -176,6 +178,7 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   }
   
@@ -234,17 +237,60 @@ body {
     margin-top: -40px;
   }
 
-  /* .card {
-
-  } */
+  .card {
+    position: relative;
+  }
 
   .card__side {
     background-color: white;
-    color: #fff;
-    font-size: 20px;
     height: 500px;
     border-radius: 3px;
+    overflow: hidden;
     box-shadow: 0 15px 40px rgba(126, 213, 111, .30);
+  }
+
+  .card__picture {
+    background-size: cover;
+    height: 230px;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .card__picture1 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), 
+    url(../img/card1.jpg);
+  }
+
+  .card__picture2 {
+    background-image: url(../img/card1.jpg);
+  }
+
+  .card__picture3 {
+    background-image: url(../img/card1.jpg);
+  }
+
+  .card__heading {
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    width: 75%;
+  }
+
+  .card__heading-span {
+    padding: 10px 15px;
+    box-decoration-break: clone;
+  }
+
+  .card__heading-span1 {
+    background-image: linear-gradient(to right bottom, 
+    rgba(126, 213, 111, .85), 
+    rgba(40, 180, 133, .85));
   }
 }
 
