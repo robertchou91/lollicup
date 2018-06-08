@@ -239,11 +239,12 @@ body {
 
   .card {
     position: relative;
+    height: 850px;
   }
 
   .card__side {
     background-color: white;
-    height: 500px;
+    height: 850px;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(126, 213, 111, .30);
@@ -291,6 +292,26 @@ body {
     background-image: linear-gradient(to right bottom, 
     rgba(126, 213, 111, .85), 
     rgba(40, 180, 133, .85));
+  }
+
+  .card__details {
+    padding: 30px;
+  }
+
+  .card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .card__details li {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .card__details li:not(:last-child) {
+    border-bottom: 1px solid #eee;
   }
 }
 
