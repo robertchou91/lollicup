@@ -213,6 +213,61 @@ body {
   text-align: center;
 }
 
+.footer {
+  background-color: black;
+  padding: 80px 0;
+  font-size: 14px;
+  margin-top: -85px;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.footer__logo-box {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  width: 200px;
+  height: auto;
+}
+
+.footer__navigation {
+}
+
+.footer__list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer_copyright {
+  text-align: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__link,
+.footer__link:link,
+.footer__link:visited {
+  color: #f7f7f7;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer__link:hover,
+.footer__link:active {
+  transform: scale(1.2);
+}
+
 @media(min-width: 767px) {
   body {
     font-family: "Fira Sans", sans-serif;
@@ -238,6 +293,15 @@ body {
     display: table;
     clear: both;
   }
+
+  .row .col-1-of-2 {
+    width: calc((100% - 80px) / 2);
+    float: left;
+  }
+
+  .row .col-1-of-2:not(:last-child) {
+    margin-right: 80px;
+  } 
 
   .row .col-1-of-3 {
     width: calc((100% - 2 * 40px) / 3);
@@ -452,6 +516,56 @@ body {
     border-radius: 3px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, .30);
     width: 100%;
+  }
+
+  .footer {
+    background-color: black;
+    padding: 80px 0;
+    font-size: 14px;
+    margin-top: -85px;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+  }
+
+  .footer__logo-box {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .footer__logo {
+    width: 200px;
+    height: auto;
+  }
+
+  .footer__navigation {
+  }
+
+  .footer__list {
+    list-style: none;
+  }
+
+  .footer__item {
+    display: inline-block;
+  }
+
+  .footer__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .footer__link,
+  .footer__link:link,
+  .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .footer__link:hover,
+  .footer__link:active {
+    transform: scale(1.2);
   }
 }
 
@@ -728,7 +842,6 @@ body {
   }
 
   .footer__navigation {
-
   }
 
   .footer__list {
@@ -747,7 +860,7 @@ body {
   .footer__link:link,
   .footer__link:visited {
     color: #f7f7f7;
-    text-decoration: non;
+    text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
   }
